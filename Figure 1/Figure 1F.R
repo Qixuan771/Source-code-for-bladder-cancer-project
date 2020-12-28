@@ -64,7 +64,7 @@ colnames(TJ_4cells_genes)=c("Genes","RS_RT4_1","RS_RT4_2","RS_SW780_1","RS_SW780
 head(TJ_4cells_genes)
 GSM_ENSG=read.csv("GSM_ENSG_file_GeneID.txt",
 header=T,sep="\t",numerals = c("allow.loss", "warn.loss", "no.loss"))
-ENSEMBL_annotations=read.csv("/projects/b1100/TJ/Bladder_Cancer/invitro/RNA_SEQ/RNASeq_Matrices/Homo_sapiens.GRCh37.87_Annotations.txt",header=FALSE,sep=" ",
+ENSEMBL_annotations=read.csv("Homo_sapiens.GRCh37.87_Annotations.txt",header=FALSE,sep=" ",
                              ,stringsAsFactors = F)
 ENSEMBL_annotations_prot=unique(ENSEMBL_annotations[ENSEMBL_annotations$V3=="protein_coding",])
 
